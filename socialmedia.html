@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Group</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#nav {
+    font-size:30px;
+    cursor:pointer
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Social media</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+         <a class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link">Logout</a>
+      </li>
+    </ul>
+ </nav>
+<span id="nav" onclick="openNav()">&#9776; </span>
+<div id="mysidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Thông tin cá nhân</a>
+    <a href="#">Bài viết</a>
+    <a href="#">Video</a>
+    <a href="#">Thông báo</a>
+    <a href="#">Bạn bè</a>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mysidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mysidenav").style.width = "0";
+}
+</script>
+<footer><div class="header__ov-social">
+    <span class="text"><b></b></span>
+    <div class="list">
+        <a href="https://www.youtube.com/?hl=vi" class="item" ref="nofollow" title="Youtube" target="_blank">
+            <img src="https://thanhnien-static.mediacdn.vn/thanhnien.vn/image/icon_youtube_fill.svg" alt="Youtube" width="24" height="24">
+        </a>
+        <a href="https://www.tiktok.com/vi-VN/" class="item" ref="nofollow" title="Tiktok" target="_blank">
+            <img src="https://thanhnien-static.mediacdn.vn/thanhnien.vn/image/Icon_Tiktok_fill.svg" alt="Tiktok" width="24" height="24">
+        </a>
+        <a href="https://vi-vn.facebook.com/" class="item" ref="nofollow" title="Facebook" target="_blank">
+            <img src="https://thanhnien-static.mediacdn.vn/thanhnien.vn/image/icon_facebook_full_color.svg" alt="Facebook" width="24" height="24">
+        </a>
+    </div></footer>
+</body>
+</html>
